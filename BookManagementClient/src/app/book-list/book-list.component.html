@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-dark bg-primary justify-content-between">
+
+        <a routerLink="/addbook" class="navbar-brand ">Add Book</a>
+        <a routerLink="/book" class="navbar-brand ">Go To Book Details</a>
+      </nav>
+        <div class="container">
+        <div class="row">
+
+        <div  *ngFor="let book of books" class="col-xs-12 col-sm-12 col-md-6 col-lg-4 bookDetails">
+          <div class="card" style="width: 18rem;">
+            <!-- <img class="card-img-top" src="../../assets/thought-catalog-o0Qqw21-0NI-unsplash.jpg" alt="Card image cap"> -->
+            <div class="card-body">
+              <h5 class="card-title">{{book.title}}</h5>
+              <p class="card-text">Author:{{book.author}}</p>
+              <p class="card-text">Publisher:{{book.publisher}}</p>
+              <p> price: ${{book.price}}</p>
+              <a routerLink="/update/{{book.id}}" class="btn btn-primary actionButton">Update Book</a>
+              <a routerLink="/delete/{{book.id}}" class="btn btn-danger actionButton">Delete Book</a>
+            </div>
+          </div>
+          </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>

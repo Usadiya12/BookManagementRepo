@@ -1,0 +1,45 @@
+2022-09-19 12:04:15.408  INFO 24344 --- [main] c.a.b.BookManagementServerApplication    : Starting BookManagementServerApplication using Java 17.0.4 on LAPTOP-GJQQ5M31 with PID 24344 (C:\Users\sadiya\Documents\workspace-spring-tool-suite-4-4.15.3.RELEASE\BookManagementServer\target\classes started by sadiya in C:\Users\sadiya\Documents\workspace-spring-tool-suite-4-4.15.3.RELEASE\BookManagementServer)
+2022-09-19 12:04:15.415  INFO 24344 --- [main] c.a.b.BookManagementServerApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-09-19 12:04:16.870  INFO 24344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-19 12:04:16.986  INFO 24344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 1 JPA repository interfaces.
+2022-09-19 12:04:17.804  INFO 24344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9092 (http)
+2022-09-19 12:04:17.829  INFO 24344 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-19 12:04:17.830  INFO 24344 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-19 12:04:18.046  INFO 24344 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-19 12:04:18.047  INFO 24344 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2541 ms
+2022-09-19 12:04:18.387  INFO 24344 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-19 12:04:18.530  INFO 24344 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-19 12:04:18.932  INFO 24344 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-19 12:04:19.125  INFO 24344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-19 12:04:19.746  INFO 24344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-19 12:04:19.811  INFO 24344 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-09-19 12:04:21.862  INFO 24344 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-19 12:04:22.048  INFO 24344 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-19 12:04:22.667  WARN 24344 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-09-19 12:04:23.166  INFO 24344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9092 (http) with context path ''
+2022-09-19 12:04:23.179  INFO 24344 --- [main] c.a.b.BookManagementServerApplication    : Started BookManagementServerApplication in 8.439 seconds (JVM running for 10.208)
+2022-09-19 12:04:36.743  INFO 24344 --- [http-nio-9092-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-19 12:04:36.744  INFO 24344 --- [http-nio-9092-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-19 12:04:36.749  INFO 24344 --- [http-nio-9092-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-09-19 12:04:36.855  INFO 24344 --- [http-nio-9092-exec-1] com.app.book.service.BookServiceImpl     : inside BookController.getAllBooks() 
+2022-09-19 12:04:36.857  INFO 24344 --- [http-nio-9092-exec-1] com.app.book.service.BookServiceImpl     :  get all book details 
+2022-09-19 12:04:36.902  INFO 24344 --- [http-nio-9092-exec-1] com.app.book.service.BookServiceImpl     : inside BookServiceImpl.getAllBookDetails() 
+2022-09-19 12:05:20.323  INFO 24344 --- [http-nio-9092-exec-3] com.app.book.service.BookServiceImpl     : inside BookController.getBookById() 
+2022-09-19 12:05:20.325  INFO 24344 --- [http-nio-9092-exec-3] com.app.book.service.BookServiceImpl     :  book found.. 
+2022-09-19 12:05:20.329  INFO 24344 --- [http-nio-9092-exec-3] com.app.book.service.BookServiceImpl     : repo.findBookById(id)
+2022-09-19 12:05:20.359  INFO 24344 --- [http-nio-9092-exec-3] com.app.book.service.BookServiceImpl     : BookDetails [id=10, title=The Alchamist, author=Paulo Coelho, publisher=Don Bradman]
+2022-09-19 12:05:20.360  INFO 24344 --- [http-nio-9092-exec-3] com.app.book.service.BookServiceImpl     : repo.findBookById(id)
+2022-09-19 12:05:23.448  INFO 24344 --- [http-nio-9092-exec-6] com.app.book.service.BookServiceImpl     : inside BookController.deleteBookById() 
+2022-09-19 12:05:23.450  INFO 24344 --- [http-nio-9092-exec-6] com.app.book.service.BookServiceImpl     :  book delete by id 
+2022-09-19 12:05:23.454  INFO 24344 --- [http-nio-9092-exec-6] com.app.book.service.BookServiceImpl     : inside BookServiceImpl.deleteBookById(Integer id) 
+2022-09-19 12:05:23.630  INFO 24344 --- [http-nio-9092-exec-5] com.app.book.service.BookServiceImpl     : inside BookController.getAllBooks() 
+2022-09-19 12:05:23.630  INFO 24344 --- [http-nio-9092-exec-5] com.app.book.service.BookServiceImpl     :  get all book details 
+2022-09-19 12:05:23.638  INFO 24344 --- [http-nio-9092-exec-5] com.app.book.service.BookServiceImpl     : inside BookServiceImpl.getAllBookDetails() 
+2022-09-19 12:05:27.316  INFO 24344 --- [http-nio-9092-exec-7] com.app.book.service.BookServiceImpl     : inside BookController.getBookById() 
+2022-09-19 12:05:27.317  INFO 24344 --- [http-nio-9092-exec-7] com.app.book.service.BookServiceImpl     :  book found.. 
+2022-09-19 12:05:27.323  INFO 24344 --- [http-nio-9092-exec-7] com.app.book.service.BookServiceImpl     : repo.findBookById(id)
+2022-09-19 12:05:27.332  INFO 24344 --- [http-nio-9092-exec-7] com.app.book.service.BookServiceImpl     : BookDetails [id=7, title=The Alchemist, author=Paulo Coelho, publisher=HarperTorch]
+2022-09-19 12:05:27.334  INFO 24344 --- [http-nio-9092-exec-7] com.app.book.service.BookServiceImpl     : repo.findBookById(id)
+2022-09-19 12:05:36.864  INFO 24344 --- [http-nio-9092-exec-9] com.app.book.service.BookServiceImpl     : inside BookController.getAllBooks() 
+2022-09-19 12:05:36.866  INFO 24344 --- [http-nio-9092-exec-9] com.app.book.service.BookServiceImpl     :  get all book details 
+2022-09-19 12:05:36.873  INFO 24344 --- [http-nio-9092-exec-9] com.app.book.service.BookServiceImpl     : inside BookServiceImpl.getAllBookDetails() 
